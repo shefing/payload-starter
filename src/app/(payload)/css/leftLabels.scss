@@ -1,0 +1,38 @@
+.field-label {
+  width: fit-content; /* Ensures label fits its content */
+  margin-right: 10px; /* Optional spacing between label and button */
+  align-items: center; /* Aligns label and button vertically */
+  margin-top: 10px;
+}
+
+.field-type__wrap {
+  flex: 1; /* Makes the div grow to fill remaining space */
+  margin-top: 10px;
+}
+
+.field-type.date-time-field,
+.field-type.text,
+.field-type.select,
+.field-type.upload,
+.field-type.radio-group,
+.field-type.group-field,
+.field-type.relationship {
+  display: flex;
+  align-items: center; /* Aligns label and button vertically */
+}
+
+.render-fields.row__fields.render-fields--margins-none
+.render-fields.render-fields--margins-small
+> div:first-child {
+  display: flex;
+}
+.checkbox-input label[for] {
+  margin-top: 0px;
+}
+.field-type.checkbox > div > label > span {
+   display: none;
+ }
+
+.READONLY .field-type.relationship.relationship--read-only .rs__placeholder {
+  display: none;
+}

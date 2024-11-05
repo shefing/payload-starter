@@ -1,0 +1,30 @@
+.field-type.rich-text-lexical.HideLabel .field-label {
+  display: none;
+}
+.field-type.rich-text-lexical.ShowLabel > .field-label:first-child {
+  font-size: 1.77885rem;
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+  font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica Neue,
+          Arial,
+          sans-serif;
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+.field-type.rich-text-lexical.ShowLabel > .field-label[for='field-aboutus'],
+.field-type.rich-text-lexical.ShowLabel > .field-label[for='field-ethicspolicy'] {
+  display: none;
+}
+.div.rich-text-lexical.field-type.rich-text-lexical--show-gutter.HideLabel > label {
+  display: none;
+}
+.inline-block-container .inline-block {
+  font-size: 15px;
+  font-family: var(--font-serif);
+  color: var(--color-blue-600);
+}

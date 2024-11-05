@@ -1,0 +1,190 @@
+.MEDIA header {
+  button {
+    position: absolute;
+    right: -24px;
+    top: -5px;
+    background-color: $background_color_1;
+  }
+
+  .thumbnail.thumbnail--size-medium {
+    width: fit-content;
+    height: max-content;
+    display: inline-table;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.field-type.text .field-label[for^='field-altText'],
+.collapsible__content .field-type.text .field-label[for^='field-caption'],
+#field-media > label {
+  display: block;
+}
+
+.EMPTY .field-type.upload {
+  .upload__dropzoneAndUpload {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+}
+
+.MEDIA .field-type.upload {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: fit-content;
+  max-width: fit-content;
+  > div.upload__dropzoneAndUpload > div {
+    width: min-content;
+    max-width: min-content;
+    padding: 0;
+    margin: 0;
+  }
+  .upload-relationship-details__filename {
+    position: absolute;
+    display: none;
+  }
+  .upload-relationship-details__meta {
+    display: none;
+  }
+  .upload-relationship-details__actions {
+    display: none;
+  }
+  .thumbnail.thumbnail--size-small.upload-relationship-details__thumbnail {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    min-width: 100px;
+    min-height: 70px;
+    max-width: 150px;
+    max-height: 200px;
+  }
+  .thumbnail.thumbnail--size-small.upload-relationship-details__thumbnail img {
+    min-width: 120px;
+    min-height: 80px;
+    max-width: 150px;
+    max-height: 200px;
+  }
+  .upload-relationship-details__imageAndDetails {
+    display: block;
+  }
+}
+.MEDIA .field-type.upload:hover {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  .upload-relationship-details__meta {
+    max-width: 90px;
+    right: 6px;
+    position: absolute;
+    top: 40px;
+    display: block;
+    background-color: #e0e0e0;
+  }
+  .upload-relationship-details__actions {
+    display: block;
+    right: 27px;
+    top: 3px;
+    position: absolute;
+    .btn.upload-relationship-details__edit.btn--icon.btn--icon-style-none.btn--icon-only.btn--size-medium.btn--icon-position-right.btn--withoutPopup.btn--style-icon-label.btn--withoutPopup {
+      right: 1px;
+      background-color: #e0e0e0;
+      position: absolute;
+    }
+    .btn.upload-relationship-details__remove.btn--icon.btn--icon-style-none.btn--icon-only.btn--size-medium.btn--icon-position-right.btn--withoutPopup.btn--style-icon-label.btn--withoutPopup {
+      background-color: #e0e0e0;
+      position: absolute;
+    }
+  }
+}
+#field-medias > div.array-field__draggable-rows,
+#field-gallery > div.array-field__draggable-rows {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 10px 10px;
+  grid-auto-rows: minmax(150px, auto);
+}
+#field-medias .array-field__draggable-rows .rah-static.rah-static--height-auto label,
+#field-gallery .array-field__draggable-rows .rah-static.rah-static--height-auto label {
+  display: none;
+}
+#field-medias
+div.array-field__draggable-rows
+div
+> div.rah-static.rah-static--height-auto
+> div
+> div {
+  height: 140px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#field-gallery
+div.array-field__draggable-rows
+div
+> div.rah-static.rah-static--height-auto
+> div
+> div {
+  height: 140px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.MEDIASARRAY .collapsible__content {
+  padding: 0px;
+  .MEDIA .field-type.upload {
+    position: relative;
+    transform: translateY(20%);
+    min-width: fit-content;
+    max-width: fit-content;
+  }
+  .MEDIA .field-type.upload img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+.MEDIAGALLERY .collapsible--style-default > .collapsible__toggle-wrap .row-label,
+.MEDIASARRAY .collapsible--style-default > .collapsible__toggle-wrap .row-label {
+  font-size: 14px;
+}
+.MEDIAGALLERY .collapsible__content {
+  padding: 0px;
+  .MEDIA .field-type.upload {
+    position: relative;
+    transform: translateY(20%);
+    min-width: fit-content;
+    max-width: fit-content;
+  }
+  .MEDIA .field-type.upload img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+.MEDIA .checkbox-input.checkbox-input {
+  display: none;
+}
+.CollapseMediaGallery .field-type.checkbox {
+  margin-bottom: 0px;
+}
+
+.cell-authorImage span.file__filename,
+.cell-logo span.file__filename
+{
+  display: none;
+}
+.cell-authorImage .relationship-cell,
+.cell-logo .relationship-cell
+{
+  min-width: 150px;
+}

@@ -1,0 +1,29 @@
+
+.collapsible--style-default > .collapsible__toggle-wrap .row-label {
+    font-size: 23.125px;
+}
+
+#nav-group-Users > button > div.nav-group__label,
+#nav-group-Content > button > div.nav-group__label,
+#nav-group-Helpers > button > div.nav-group__label,
+#nav-group-Components > button > div.nav-group__label,
+#nav-group-Admin > button > div.nav-group__label {
+    font-size: 16px;
+    color: black;
+}
+
+
+.doc-drawer__header {
+    margin-top: 30px !important;
+}
+
+.right-panel-close {
+    position: absolute;
+    z-index: 100;
+    right: 5px;
+    top: 135px;
+}
+
+#field-url {
+    max-width: 375px;
+}
