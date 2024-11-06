@@ -2,7 +2,7 @@
 
 Helpers and practices to start payload cms admin project
 
-This project was built with [PayloadCMS](https://payloadcms.com/) and [Next.js 15](https://nextjs.org/), focusing on providing substance and mental health counseling services.
+This project was built with [PayloadCMS](https://payloadcms.com/) and [Next.js 15](https://nextjs.org/), focusing on providing advanced and customize payload services.
 
 ## Table of Contents
 
@@ -22,11 +22,11 @@ This project was built with [PayloadCMS](https://payloadcms.com/) and [Next.js 1
   - Custom Version View
   - Live Preview integration
 - [🚀 Plugins](#getting-started)
-    - [💻 Access plugin](#accessplugin)
-    - [💁 Author fields plugin](#author-fields-plugin)
-    - [📝 Comments plugin](#comments-plugin)
-    - [👥️ Cross Collection config](#cross-collection-config) - utlizing metadat cllection to inject behavior
-    - [🖼️ Media Authoring plugin](#media-authoring-plugin) - replacing component for all media in the system
+  - [💻 Access plugin](#accessplugin)
+  - [💁 Author fields plugin](#author-fields-plugin)
+  - [📝 Comments plugin](#comments-plugin)
+  - [👥️ Cross Collection config](#cross-collection-config) - utlizing metadata collection to inject behavior
+  - [🖼️ Media Authoring plugin](#media-authoring-plugin) - replacing component for all media in the system
 - [🚀 Style changes](#style-changes)
   - layout
   - left labels
@@ -41,13 +41,13 @@ This project was built with [PayloadCMS](https://payloadcms.com/) and [Next.js 1
   - Icon select field
   - Shadcn tailwind integration
 - [💾 Database migrations](#database)
-  - Process rich text field 
+  - Process rich text field
   - Changing type of field
   - Migrate legacy data with upsert support
   - Change string field to use relation field
   - Importing from CSV/JSON/TypeSense API
 - [🚀 Deployment](#deployment)
-  - docker 
+  - docker
   - docker compose
 
 ## [Access plugin](./src/plugins/access/accessPlugin.ts)
@@ -70,20 +70,21 @@ Then the Admin assigns each user its roles:
 
 **The plugin does the following:**
 
-1. Collect all collections and globals for the permission for the permissions drop down. 
+1. Collect all collections and globals for permissions drop down.
 
-2. Go other all collections in the system and assigns them the access APIs according to the definition done by the Admin.
+2. Go other all collections in the system and assigns them the access APIs according to the definition done by Admin.
 
-3. Sets the Cell display for createAt and updatedAt fields to use moment.js relation time 
+3. Sets Cell display for createAt and updatedAt fields to use moment.js relation time
 
 ## [Author Fields plugin](./src/plugins/author-fields/authorFieldPlugin.ts)
 
 Payload is storing the modification and creation date of each document's collections.
 
-We have the need to store also the:
+We have the need to store the following as well:
+
 1. User who created or updated the document.
-2. The publish date of the document (For publishable content)
-All this data is computed and rendered for each collection under Author Data Tab
-
-On list views dates are presented in moment.js relation format like:
-
+2. Publish date of the document (For publishable content)
+   All this data is computed and rendered for each collection under Author Data Tab
+   ![img_2.png](img_2.png)
+   On list views dates are presented in moment.js relation format like:
+   ![img_3.png](img_3.png)
