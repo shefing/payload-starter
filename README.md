@@ -72,7 +72,7 @@ Then the Admin assigns each user its roles:
 
 1. Collect all collections and globals for permissions drop down.
 
-2. Go other all collections in the system and assigns them the access APIs according to the definition done by Admin.
+2. Go over all collections in the system and assigns them the access APIs according to the definition done by Admin.
 
 3. Sets Cell display for createAt and updatedAt fields to use moment.js relation time
 
