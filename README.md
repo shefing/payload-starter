@@ -25,7 +25,7 @@ This project was built with [PayloadCMS](https://payloadcms.com/) and [Next.js 1
   - [💻 Access plugin](#accessplugin)
   - [💁 Author fields plugin](#author-fields-plugin)
   - [📝 Comments plugin](#comments-plugin)
-  - [👥️ Cross Collection config](#cross-collection-config) - utlizing metadata collection to inject behavior
+  - [👥️ Cross Collection config](#cross-collection-config) - utilizing metadata collection to inject behavior
   - [🖼️ Media Authoring plugin](#media-authoring-plugin) - replacing component for all media in the system
 - [🚀 Style changes](#style-changes)
   - layout
