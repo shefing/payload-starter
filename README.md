@@ -2,7 +2,7 @@
 
 Helpers and practices to start payload cms admin project
 
-This project was built with [PayloadCMS](https://payloadcms.com/) and [Next.js 15](https://nextjs.org/), focusing on providing substance and mental health counseling services.
+This project was built with [PayloadCMS](https://payloadcms.com/) and [Next.js 15](https://nextjs.org/), to ease the setup of CMS projects using this stack.
 
 ## Table of Contents
 
