@@ -52,27 +52,29 @@ This project was built with [PayloadCMS](https://payloadcms.com/) and [Next.js 1
 
 ## [Access plugin](./src/plugins/access/accessPlugin.ts)
 
-We wanted to create a plugin which will enable flexibility in setting the roles
+We wanted to create a plugin which will enable flexibility in setting the user roles
 
-The Admin sets in the [Roles](./src/collections/auth/Roles.ts) collection any roles needed in the organization.
+An admin can set [Roles](./src/collections/auth/Roles.ts) according to the organization needs
 
-Permission can contain many globals and collections and the types we allow for them
+Roles have a list of permissions
+
+Each permission contains a list of globals/collections, and defines read/write/etc options
 
 For example:
 ![img.png](img.png)
-The Admin can set as many permissions it wants and as many as roles as well.
 
-Then the Admin assigns each user its roles:
+After defining the roles ,an admin can assign the roles to the users:
 
 ![img_1.png](img_1.png)
 
-//TODO move 'users', 'roles', 'media' to configuration
+$${\color{red}??????}$$
+//TODO: move 'users', 'roles', 'media' to configuration $${\color{red}??????}$$
 
 **The plugin does the following:**
 
-1. Collect all collections and globals for permissions drop down.
+1. Collects all content types for showing them in the permission drop down.
 
-2. Go over all collections in the system and assigns them the access APIs according to the definition done by Admin.
+2. Gos over all the collectiona and globals in the system and assign them the access APIs according to the definition done by Admin.
 
 3. Sets Cell display for createAt and updatedAt fields to use moment.js relation time
 
@@ -84,7 +86,31 @@ We have the need to store the following as well:
 
 1. User who created or updated the document.
 2. Publish date of the document (For publishable content)
-   All this data is computed and rendered for each collection under Author Data Tab
-   ![img_2.png](img_2.png)
-   On list views dates are presented in moment.js relation format like:
-   ![img_3.png](img_3.png)
+
+All this data is computed and rendered for each collection under Author Data Tab:
+
+![img_2.png](img_2.png)
+
+On list views, dates are presented in moment.js relation format like:
+
+![img_3.png](img_3.png)
+
+## [Comments plugin](./src/plugins/CommentsPlugin.ts)
+
+We wanted to create a plugin which will enable the ability to add comments between users over a text from RichText field
+
+The user can add comment on selected text to start a discussion about this content:
+
+![img_4.png](img_4.png)
+
+Comments section is available on the right side of the screen and users can reply or delete comment
+
+![img_5.png](img_5.png)
+
+In addition, there is highlight mark on text that has comments
+
+![img_6.png](img_6.png)
+
+```
+
+```
